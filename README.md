@@ -76,7 +76,7 @@ var myDoubleNumber = 7.5
 var result: Double = Double(myIntNumber) + myDoubleNumber
 ```
 
-### แหล่งข้อมูลอ้างอิง
+## แหล่งข้อมูลอ้างอิง
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
 * [App Development with Swift](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1219117996), Apple Inc., 2017. Available on: Apple Book Store.
