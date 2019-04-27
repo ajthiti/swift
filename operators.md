@@ -6,16 +6,16 @@ description: >-
 
 # Operators
 
-**ตัวดำเนินการ \(Operator\)** คือ สัญลักษณ์ที่ใช้ในคำสั่งหรือนิพจน์เพื่อกำหนดกระบวนการการทำงานของโปรแกรม ในการเขียนโปรแกรม เราสามารถใช้ตัวดำเนินการเพื่อทำสิ่งต่างๆ ดังนี้
+**ตัวดำเนินการ \(Operator\)** คือ สัญลักษณ์ที่ใช้ในนิพจน์หรือคำสั่งเพื่อกำหนดกระบวนการการทำงานของโปรแกรม ในการเขียนโปรแกรม เราสามารถใช้ตัวดำเนินการเพื่อทำสิ่งต่างๆ ดังนี้
 
-การกำหนดค่าให้กับตัวแปรหรือค่าคงที่ \(Assign a value\)
+### **การกำหนดค่าให้กับตัวแปรหรือค่าคงที่ \(Assign a value\)**
 
 ```swift
 let favoriteActor = "Tom Cruise"  //กำหนดค่าให้ตัวแปร
 favoriteActor = "Bradl Pitt"      //แก้ไขค่าที่อยู่ในตัวแปร
 ```
 
-การดำเนินการทางคณิตศาสตร์ \(Basic Arithmetic\)
+### **การดำเนินการทางคณิตศาสตร์ \(Basic Arithmetic\)**
 
 ```swift
 var firstScore = 52
@@ -29,7 +29,7 @@ let agvScore = Double(totalScore) / 4     //การหาร
 let modScore = thirdScore % 3             //การหารเอาเศษ
 ```
 
-การดำเนินการกำหนดค่าเชิงประกอบ \(Compound Assignment\)
+### **การดำเนินการด้วยตัวดำเนินการกำหนดค่าเชิงประกอบ \(Compound Assignment\)**
 
 ```swift
 var myScore: Int = 20
@@ -39,7 +39,9 @@ myScore *= 2    // myScore = myScore * 2
 myScore /= 2    // myScore = myScore / 2
 ```
 
-การดำเนินการแบบเปรียบเทียบ \(Comparison Operators\) โดยจะทำการเปรียบเทียบค่าที่ถูกเก็บในตัวแปร 2 ตัวแปร เช่น ค่าของตัวแปร a และ ค่าของตัวแปร b โดยจะได้ผลลัพธ์จากการทำงานเป็น true หรือ false
+### **การดำเนินการด้วยตัวดำเนินการเปรียบเทียบ \(Comparison Operators\)** 
+
+ตัวดำเนินการกลุ่มนี้จะทำหน้าที่ในการเปรียบเทียบค่าที่ถูกเก็บในตัวแปร 2 ตัวแปร เช่น ค่าของตัวแปร a และ ค่าของตัวแปร b โดยจะได้ผลลัพธ์จากการทำงานเป็นข้อมูลมูลประเภท Boolean \(true หรือ false\) ตัวดำเนินการเปรียบเทียบ ประกอบด้วย
 
 * การใช้ == ในการเปรียบเทียบว่า a และ b มีค่าเท่ากัน ใช่หรือไม่ เช่น  a == b 
 * การใช้ !=  ในการเปรียบเทียบว่า a และ b มีค่าไม่เท่ากัน ใช่หรือไม่ เช่น a != b
@@ -60,7 +62,15 @@ if (a >= b) {
  }
 ```
 
-การดำเนินการแบบตรรกะ \(Logical Operator\) เป็นการดำเนินการกับข้อมูลประเภท Boolean \(true หรือ false\) ด้วยเครื่องหมาย ! \(NOT\), && \(AND\) หรือ \|\| \(OR\) โดยจะได้ผลลัพธ์การทำงานดังนี้
+### **การดำเนินการด้านตรรกะ \(Logical Operator\)** 
+
+ตัวดำเนินการที่ใช้เพื่อประมวลผลทางตรรกศาสตร์กับข้อมูลประเภท Boolean \(true หรือ false\) ตัวดำเนินการในกลุ่มนี้ประกอบด้วย 
+
+* Logical NOT  \( ! \)  
+* Logical AND \( && \)
+* Logical OR \( \|\| \)
+
+โดยหากกำหนดให้ a และ b เป็นตัวแปรประเภท Boolean แล้ว จะได้ผลลัพธ์การดำเนินการด้วยตัวดำเนินการด้านตรรกะ ดังนี้
 
 | a | b | !a | a && b | a \|\| b |
 | :---: | :---: | :---: | :---: | :---: |
@@ -68,4 +78,46 @@ if (a >= b) {
 | true | false | false | false | true |
 | false | true | true | false | true |
 | false | false | true | false | false |
+
+ตัวอย่างการใช้ตัวดำเนินการด้านตรรกะ เช่น
+
+```swift
+if (doorCode && retinaScan) || doorKey || password {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED")
+}
+```
+
+### ลำดับในการทำงานของตัวดำเนินการ \(Order of operations\)
+
+ตัวดำเนินการแต่ละตัวต่างก็มีลำดับความสำคัญ \(Precedence\) ของการทำงานก่อนหลังแตกต่างกันไป โดยตัวดำเนินการที่มีความสำคัญสูงจะทำงานก่อนตัวดำเนินการที่มีความสำคัญต่ำ 
+
+```swift
+let x = 2, y = 3, z = 5
+var result = x + y * z              // Equals 17
+var anotherResult = (x + y) * z     // Equals 25
+```
+
+ความสำคัญของตัวดำเนินการในภาษา Swift สามารถเรียงลำดับได้ ดังนี้
+
+* Logical NOT  \( ! \)
+* Multiplication \( \* \)
+* Division \( / \)
+* Module \( % \)
+* Addition \( + \)
+* Substraction \( - \)
+* Less than \( &lt; \)
+* Less than or equal \( &lt;=\)
+* More than \( &gt; \)
+* More than or equal \( &gt;=\)
+* Equal \( == \)
+* Not be equal \( != \)
+* Logical AND \( && \)
+* Logical OR \( \|\| \)
+
+## แหล่งข้อมูลอ้างอิง
+
+* [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
+* [App Development with Swift](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1219117996), Apple Inc., 2017. Available on: Apple Book Store.
 
