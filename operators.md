@@ -29,6 +29,14 @@ let agvScore = Double(totalScore) / 4     //การหาร
 let modScore = thirdScore % 3             //การหารเอาเศษ
 ```
 
+เครื่องหมาย + \(Additional operator\) นอกจากจะถูกใช้เพื่อดำเนินการกับตัวเลขแล้ว ยังสามารถใช้ในการเชื่อมต่อข้อความ \(Concatenation\) ได้ด้วย ตัวอย่างเช่น 
+
+```swift
+var sayHi: String = "สวัสดีครับ คุณ"
+var friendName: String = "สมชาย"
+print (sayHi + friendName)     //สวัสดีครับ คุณสมชาย
+```
+
 ### **การดำเนินการด้วยตัวดำเนินการกำหนดค่าเชิงประกอบ \(Compound Assignment\)**
 
 ```swift
