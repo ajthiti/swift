@@ -82,6 +82,15 @@ var result: Double = Double(myIntNumber) + myDoubleNumber
 * [App Development with Swift](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1219117996), Apple Inc., 2017. Available on: Apple Book Store.
 
 {% hint style="info" %}
+**รายละเอียดเพื่อการอ้างอิง  
+ผู้เขียน** ธิติ ธีระเธียร    
+**วันที่เผยแพร่**  วันที่ 25 เมษายน 2562.  
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/](https://ajthiti.gitbook.io/swift/)  
+**เงื่อนใขในการใช้งาน**  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
+
+
+
+
 
