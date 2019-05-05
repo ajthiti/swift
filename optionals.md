@@ -84,3 +84,14 @@ if let myNumber = temp as? Int {
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
 * [App Development with Swift](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1219117996), Apple Inc., 2017. Available on: Apple Book Store.
 
+
+
+{% hint style="info" %}
+**รายละเอียดเพื่อการอ้างอิง  
+ผู้เขียน** ธิติ ธีระเธียร    
+**วันที่เผยแพร่**  วันที่ 26 เมษายน 2562.  
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/optionals](https://ajthiti.gitbook.io/swift/optionals)  
+**เงื่อนใขในการใช้งาน**  
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+{% endhint %}
+
