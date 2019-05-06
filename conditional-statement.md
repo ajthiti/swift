@@ -128,7 +128,7 @@ print("There are \(naturalCount) \(countedThings).")
 **รายละเอียดเพื่อการอ้างอิง  
 ผู้เขียน** ธิติ ธีระเธียร    
 **วันที่เผยแพร่**  วันที่ 6 พฤษภาคม 2562.  
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/operators](https://ajthiti.gitbook.io/swift/operators)  
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/conditional-statement](https://ajthiti.gitbook.io/swift/conditional-statement)  
 **เงื่อนใขในการใช้งาน**  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
