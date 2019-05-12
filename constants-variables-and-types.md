@@ -78,7 +78,7 @@ var result: Double = Double(myIntNumber) + myDoubleNumber
 
 ## กิจกรรมเพื่อฝึกปฏิบัติ
 
-**กิจกรรมที่ 1:** ดาวน์โหลดไฟล์ Naming.playground เพื่อทำแบบฝึกปฏิบัติเกี่ยวกับแนวทางในการตั้งชื่อ \(Naming and Identifiers\) เพื่อใช้เรียกแทนข้อมูล โดยใช้โปรแกรม Xcode
+**กิจกรรมที่ 1:** ดาวน์โหลดไฟล์ Naming.playground และเปิดด้วย Xcode เพื่อทำศึกษาเพิ่มเติมเกี่ยวกับแนวทางในการตั้งชื่อ \(Naming and Identifiers\) เพื่อใช้เรียกแทนข้อมูล 
 
 {% file src=".gitbook/assets/01\_naming.playground.zip" caption="ดาวน์โหลดไฟล์ Naming.playground" %}
 
