@@ -76,6 +76,12 @@ var myDoubleNumber = 7.5
 var result: Double = Double(myIntNumber) + myDoubleNumber
 ```
 
+## กิจกรรมเพื่อฝึกปฏิบัติ
+
+**กิจกรรมที่ 1:** ดาวน์โหลดไฟล์ Naming.playground เพื่อทำแบบฝึกปฏิบัติเกี่ยวกับแนวทางในการตั้งชื่อ \(Naming and Identifiers\) เพื่อใช้เรียกแทนข้อมูล โดยใช้โปรแกรม Xcode
+
+{% file src=".gitbook/assets/01\_naming.playground.zip" caption="ดาวน์โหลดไฟล์ Naming.playground" %}
+
 ## แหล่งข้อมูลอ้างอิง
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
