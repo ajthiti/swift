@@ -22,7 +22,7 @@ description: >-
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018
 * [Intro to App Development with Swift](https://books.apple.com/th/book/intro-to-app-development-with-swift/id1118575552), Apple Inc., 2017.
-* [App Development with Swift](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1219117996), Apple Inc., 2017.
+* [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017.
 * [Getting Started with Swift](https://developer.apple.com/videos/play/wwdc2016/404/), in WWDC 2016 - Session 404, Apple Inc., 2016.
 * [Swift.org](https://swift.org), เว็บไซต์เพื่อการแลกเปลี่ยนเรียนรู้เกี่ยวกับภาษา Swift
 

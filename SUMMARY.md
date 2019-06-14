@@ -5,4 +5,5 @@
 * [Optionals](optionals.md)
 * [Operators](operators.md)
 * [Conditional Statement](conditional-statement.md)
+* [String](string.md)
 
