@@ -167,7 +167,8 @@ var resultString = mainMessage.replacingOccurrences(of: "Obj-C", with: "Swift")
 print(resultString)  //"Swift เป็นภาษาที่ง่ายต่อการเรียนรู้ เราใช้ภาษา Swift ในการพัฒนาแอพสำหรับ iPhone"
 ```
 
-### การใช้ดัชนี \(String Indices\)
+## แหล่งข้อมูลอ้างอิง
 
-เราสามารถระบุตำแหน่งของอักขระใน String ได้โดยใช้ดัชนี \(Index\) 
+* [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
+* [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017. Available on: Apple Book Store.
 
