@@ -157,7 +157,7 @@ if greetingMessage.contains("my name is") {
 }
 ```
 
-`replacingOccurrences (Of: with: )` เป็นฟัก์ชันสำหรับการแทนที่คำหรือข้อความใน String
+`replacingOccurrences (Of: with: )` เป็นฟังก์ชันสำหรับการแทนที่คำหรือข้อความใน String
 
 ```swift
 var mainMessage = "Obj-C เป็นภาษาที่ง่ายต่อการเรียนรู้ เราใช้ภาษา Obj-C ในการพัฒนาแอพสำหรับ iPhone"
@@ -165,6 +165,26 @@ print(mainMessage)  //"Obj-C เป็นภาษาที่ง่ายต่
 
 var resultString = mainMessage.replacingOccurrences(of: "Obj-C", with: "Swift")
 print(resultString)  //"Swift เป็นภาษาที่ง่ายต่อการเรียนรู้ เราใช้ภาษา Swift ในการพัฒนาแอพสำหรับ iPhone"
+```
+
+`firstIndex(of: )` เป็นฟังก์ชันที่ใช้ในการค้นหาตำแหน่งของอักขระที่ระบุ โดยผลลัพธ์ที่ได้จะเป็น String.index ของตำแหน่งแรกที่พบและเป็นข้อมูลแบบ Optional ดังนั้น จึงต้องทำการ Unwrap หรือ Binding ก่อนเมื่อนำมาใช้งาน
+
+```swift
+let myString = "ABCDEFG"
+let positionOf_C = myString.firstIndex(of: "C")
+if positionOf_C != nil {
+    print("ตรวจพบอักขระดังกล่าวในข้อความ")
+}
+```
+
+`range(of: )` เป็นฟังก์ชันที่ทำงานในลักษณะเดียวกับ `firstIndex(of: )` แต่ใช้ในการค้นหาชุดของอักขระที่ได้ระบุไว้ ผลลัพธ์ที่ได้จากการทำงานเป็นแบบ Optional ดังนั้น จึงต้องทำการ Unwrap หรือ Binding ก่อนเมื่อนำมาใช้งาน
+
+```swift
+let myString = "ABCDEFG"
+let rangeOf_CDE = myString.range(of: "CDE")
+if rangeOf_CDE != nil {
+    print("ตรวจพบชุดของอักขระดังกล่าวในข้อความ")
+}
 ```
 
 ## แหล่งข้อมูลอ้างอิง
