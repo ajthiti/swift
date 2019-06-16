@@ -167,7 +167,7 @@ var resultString = mainMessage.replacingOccurrences(of: "Obj-C", with: "Swift")
 print(resultString)  //"Swift เป็นภาษาที่ง่ายต่อการเรียนรู้ เราใช้ภาษา Swift ในการพัฒนาแอพสำหรับ iPhone"
 ```
 
-`firstIndex(of: )` เป็นฟังก์ชันที่ใช้ในการค้นหาตำแหน่งของอักขระที่ระบุ โดยผลลัพธ์ที่ได้จะเป็น String.index ของตำแหน่งแรกที่พบและเป็นข้อมูลแบบ Optional ดังนั้น จึงต้องทำการ Unwrap หรือ Binding ก่อนเมื่อนำมาใช้งาน
+`firstIndex(of: )` เป็นฟังก์ชันที่ใช้ในการค้นหาตำแหน่งของอักขระที่ระบุ โดยผลลัพธ์ที่ได้จะเป็น String.index ของตำแหน่งแรกที่พบอักขระ และเป็นข้อมูลแบบ Optional เนื่องจากจะคืนค่าเป็น nil หากค้นหาแล้วไม่พบอักขระที่ต้องการอยู่ในข้อความ ดังนั้น จึงต้องทำการ Unwrap หรือ Binding ก่อนเมื่อนำมาใช้งาน
 
 ```swift
 let myString = "ABCDEFG"
@@ -177,7 +177,7 @@ if positionOf_C != nil {
 }
 ```
 
-`range(of: )` เป็นฟังก์ชันที่ทำงานในลักษณะเดียวกับ `firstIndex(of: )` แต่ใช้ในการค้นหาชุดของอักขระที่ได้ระบุไว้ ผลลัพธ์ที่ได้จากการทำงานเป็นแบบ Optional ดังนั้น จึงต้องทำการ Unwrap หรือ Binding ก่อนเมื่อนำมาใช้งาน
+`range(of: )` เป็นฟังก์ชันที่ทำงานในลักษณะเดียวกับ `firstIndex(of: )` แต่ใช้ในการค้นหาชุดของอักขระที่ได้ระบุไว้ ผลลัพธ์ที่ได้จากการทำงานเป็นแบบ Optional กล่าวคือจะคืนค่าเป็น nil หากค้นหาแล้วไม่พบชุดอักขระในข้อความ ดังนั้น จึงต้องทำการ Unwrap หรือ Binding ก่อนเมื่อนำมาใช้งาน
 
 ```swift
 let myString = "ABCDEFG"
@@ -185,6 +185,49 @@ let rangeOf_CDE = myString.range(of: "CDE")
 if rangeOf_CDE != nil {
     print("ตรวจพบชุดของอักขระดังกล่าวในข้อความ")
 }
+```
+
+`remove(at: )` เป็นฟังก์ชันสำหรับการลบอักขระ 1 ตัว ซึ่งอยู่ ณ ตำแหน่ง String.index ของข้อความที่กำหนด และ `removeSubrange ( )` เป็นฟังก์ชันสำหรับการลบชุดอักขระในตำแหน่งหรือช่วงของ String.index ที่กำหนดออกจากข้อความ
+
+```swift
+var myString = "ABCDEFG"
+let character_e = myString.firstIndex(of: "E")
+myString.remove(at: character_e!)
+print(myString)  // ABCDFG
+
+myString = "ABCDEFG"
+let startCharacter = myString.firstIndex(of: "C")
+let endCharacter = myString.firstIndex(of: "E")
+myString.removeSubrange(startCharacter!...endCharacter!)
+print(myString)  // ABFG
+
+myString = "ABCDEFG"
+let subString = myString.range(of: "CDE")
+myString.removeSubrange(subString!)
+print(myString)  // ABFG
+
+```
+
+`insert( _: , at: )` เป็นฟังก์ชันสำหรับการเพิ่มอักขระ 1 ตัว ณ ตำแหน่ง String.index ของข้อความที่กำหนด และ `insert (contentOf: , at: )` เป็นการแทรกชุดอักขระในตำแหน่งString.index ของข้อความที่กำหนด
+
+```swift
+var myUsername = "ajthiti"
+
+let strIndex = myUsername.endIndex
+myUsername.insert("@", at: strIndex)
+print(myUsername) // ajthiti@
+
+myUsername.insert(contentsOf: "silanukprach.com", at: myUsername.endIndex)
+print(myUsername) // ajthiti@silanukprach.com
+```
+
+`replaceSubrange ( _: , with: )` ใช้สำหรับการแทนที่ข้อความด้วยชุดอักขระในตำแหน่งของช่วงที่กำหนด
+
+```swift
+var myString = "การใช้คำสั่งในภาษา Obj-C เพื่อแทนที่ข้อความ"
+let findString = myString.range(of: "Obj-C")
+myString.replaceSubrange(findString!, with: "Swift")
+print(myString)  // การใช้คำสั่งในภาษา Swift เพื่อแทนที่ข้อความ
 ```
 
 ## แหล่งข้อมูลอ้างอิง
