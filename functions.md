@@ -87,3 +87,15 @@ func sayHello(to person: String, and anotherPerson: String) {
 sayHello(to: "Thiti", and: "Looknam")  // Hello! Thiti and Looknam.
 ```
 
+หากเราต้องการเรียกใช้ฟังก์ชัน โดยละเว้นการระบุชื่ออาร์กิวเมนต์ \(Omiting label\) สามารถทำได้โดยใช้ เครื่องหมาย  `_`  ระบุไว้แทนชื่อพารามิเตอร์ของฟังก์ชัน
+
+```swift
+func sayHello(_ person: String, _ anotherPerson: String) {
+   print("Hello! \(person) and \(anotherPerson).")
+}
+
+sayHello("Thiti", "Looknam")  // Hello! Thiti and Looknam.
+```
+
+
+
