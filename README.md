@@ -36,11 +36,7 @@ description: >-
 
 **Playground** คือ ตัวช่วยสำหรับการเรียนรู้ภาษา Swift ที่ดีที่สุด เนื่องจากมีระบบโต้ตอบอัตโนมัติที่จะทำให้เวลาที่เราเขียนคำสั่งในภาษา Swift แล้วจะสามารถแสดงผลลัพธ์ให้เราเห็นได้ทันที 
 
-## กิจกรรมเพื่อฝึกปฏิบัติ
 
-**กิจกรรมที่ 1:** ดาวน์โหลดไฟล์ PlaygroundBasics และเปิดไฟล์เพื่อทดลองทำแบบฝึกปฏิบัติ โดยใช้โปรแกรม Xcode
-
-{% file src=".gitbook/assets/playgroundbasics.playground.zip" caption="ดาวน์โหลดไฟล์ PlaygroundBasics.playground" %}
 
 {% hint style="info" %}
 **รายละเอียดเพื่อการอ้างอิง  
