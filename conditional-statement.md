@@ -41,11 +41,11 @@ if temperatureInFahrenheit <= 32 {
 }
 ```
 
-ในกรณีที่ต้องการให้มีทางเลือกในการทำงานมากกว่า 2 ทางเลือก เราจะสามารถใช้คำสั่ง `else If` เพื่อกำหนดเงื่อนไขที่ต้องตรวจสอบเป็นลำดับชั้น โดยโปรแกรมจะประมวลผลคำสั่งซึ่งอยู่ภายใน scope ของเงื่อนไขที่เป็น จริง \(true\) เพียงทางเลือกเดียวเท่านั้น แต่หากตรวจพบว่าไม่มีเงื่อนไขใดเลยที่เป็นจริง โปรแกรมจะทำคำสั่งสุดท้าย
+ในกรณีที่ต้องการให้มีทางเลือกในการทำงานมากกว่า 2 ทางเลือก เราจะสามารถใช้คำสั่ง `else if` เพื่อกำหนดเงื่อนไขที่ต้องตรวจสอบเป็นลำดับชั้น โดยโปรแกรมจะประมวลผลคำสั่งซึ่งอยู่ภายใน scope ของเงื่อนไขที่เป็น จริง \(true\) เพียงทางเลือกเดียวเท่านั้น แต่หากตรวจพบว่าไม่มีเงื่อนไขใดเลยที่เป็นจริง โปรแกรมจะทำคำสั่งสุดท้าย
 
 ![&#xE1C;&#xE31;&#xE07;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; else If](.gitbook/assets/untitled-diagram-3.png)
 
-ตัวอย่างในการใช้คำสั่ง `else If`
+ตัวอย่างในการใช้คำสั่ง `else if`
 
 ```swift
 var studentScore = 73
@@ -61,6 +61,27 @@ if studentScore >= 80 {
  } else {
     print("ผลการเรียน คือ F")
  }
+```
+
+```swift
+let hourOfDay = 12
+var timeOfDay = ""
+
+if hourOfDay < 6 {
+    timeOfDay = "Early morning"
+} else if hourOfDay < 12 {
+    timeOfDay = "Morning"
+} else if hourOfDay < 17 {
+    timeOfDay = "Afternoon"
+} else if hourOfDay < 20 {
+    timeOfDay = "Evening"
+} else if hourOfDay < 24 {
+    timeOfDay = "Late evening"
+} else {
+    timeOfDay = "INVALID HOUR!"
+}
+
+print(timeOfDay)
 ```
 
 ### การใช้คำสั่ง switch
