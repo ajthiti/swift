@@ -126,13 +126,11 @@ var anotherResult = (x + y) * z     // Equals 25
 
 ## ตัวดำเนินการอื่นๆ
 
-**Ternary conditional operator** เป็นตัวดำเนินการที่มีการตรวจสอบเงื่อนไขเพื่อการตัดสินใจในการทำงาน 
+**Ternary conditional operator** เป็นตัวดำเนินการที่มีการตรวจสอบเงื่อนไขเพื่อการตัดสินใจในการทำงาน ซึ่งมีรูปแบบการใช้งาน คือ `เงื่อนไข ? a : b` โดยถ้าเงื่อนไขเป็น true ผลลัพธ์จะเป็น a แต่ถ้าเป็น false ผลลัพธ์จะเป็น b 
 
 ```swift
-let firstNumber = 20
-let secondNumber = 60
-
-var maxNum = (firstNumber > secondNumber) ? firstNumber : secondNumber 
+let myLuckyNumber = 35
+(myLuckyNumber % 2 == 0) ? print("จำนวนคู่") : print("จำนวนคี่") 
 ```
 
 ## แหล่งข้อมูลอ้างอิง
