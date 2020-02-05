@@ -126,14 +126,19 @@ var anotherResult = (x + y) * z     // Equals 25
 
 ## ตัวดำเนินการอื่นๆ
 
-**Ternary conditional operator** เป็นตัวดำเนินการที่มีการตรวจสอบเงื่อนไขเพื่อการตัดสินใจในการทำงาน ซึ่งมีรูปแบบการใช้งาน คือ `เงื่อนไข ? a : b` โดยถ้าเงื่อนไขเป็น true ผลลัพธ์จะเป็น a แต่ถ้าเป็น false ผลลัพธ์จะเป็น b 
+**Ternary conditional operator** เป็นตัวดำเนินการที่มีการตรวจสอบเงื่อนไขเพื่อการตัดสินใจในการทำงาน ซึ่งมีรูปแบบการใช้งาน คือ `condition ? a : b` โดยถ้าเงื่อนไขเป็น true ผลลัพธ์จะเป็น a แต่ถ้าเป็น false ผลลัพธ์จะเป็น b 
 
 ```swift
 let myLuckyNumber = 35
 (myLuckyNumber % 2 == 0) ? print("จำนวนคู่") : print("จำนวนคี่") 
 ```
 
-**Nil-coalescing operator** เป็นตัวดำเนินการที่ใช้สำหรับตรวจสอบค่า
+**Nil-coalescing operator** เป็นตัวดำเนินการที่ใช้สำหรับตรวจสอบค่า Optional ซึ่งมีรูปแบบการใช้งาน คือ `optional ?? default` โดยหากพบว่ามีการกำหนดค่าใน Optional ก็จะทำการ Unwrap แต่ถ้าหากเป็น nil ก็จะกำหนดค่า default เข้าไปแทนที่
+
+```swift
+var petName: String?
+print("สัตว์เลื้องของฉันชื่อว่า \(petName ?? "Daisy").")
+```
 
 ## แหล่งข้อมูลอ้างอิง
 
