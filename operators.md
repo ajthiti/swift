@@ -18,15 +18,15 @@ favoriteActor = "Bradl Pitt"      //แก้ไขค่าที่อยู�
 ### **การดำเนินการทางคณิตศาสตร์ \(Basic Arithmetic\)**
 
 ```swift
-var firstScore = 52
-var secondScore = 24
-var thirdScore = 35
+let firstScore = 52
+let secondScore = 24
+let thirdScore = 35
 
-let totalScore = firstScore + secondScore + thirdScore  //การบวก
-let diffScore = firstScore - secondScore  //การลบ
-let powerScore = totalScore * 2           //การคูณ
-let agvScore = Double(totalScore) / 4     //การหาร
-let modScore = thirdScore % 3             //การหารเอาเศษ
+var totalScore = firstScore + secondScore + thirdScore  //การบวก
+var diffScore = firstScore - secondScore  //การลบ
+var powerScore = totalScore * 2           //การคูณ
+var agvScore = Double(totalScore) / 4     //การหาร
+var modScore = thirdScore % 3             //การหารเอาเศษ
 ```
 
 เครื่องหมาย + \(Additional operator\) นอกจากจะถูกใช้เพื่อดำเนินการกับตัวเลขแล้ว ยังสามารถใช้ในการเชื่อมต่อข้อความ \(Concatenation\) ได้ด้วย ตัวอย่างเช่น 
