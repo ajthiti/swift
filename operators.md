@@ -133,6 +133,8 @@ let myLuckyNumber = 35
 (myLuckyNumber % 2 == 0) ? print("จำนวนคู่") : print("จำนวนคี่") 
 ```
 
+**Nil-coalescing operator** เป็นตัวดำเนินการที่ใช้สำหรับตรวจสอบค่า
+
 ## แหล่งข้อมูลอ้างอิง
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
