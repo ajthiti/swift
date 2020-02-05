@@ -11,7 +11,7 @@ description: >-
 ### **การกำหนดค่าให้กับตัวแปรหรือค่าคงที่ \(Assign a value\)**
 
 ```swift
-let favoriteActor = "Tom Cruise"  //กำหนดค่าให้ตัวแปร
+var favoriteActor = "Tom Cruise"  //กำหนดค่าให้ตัวแปร
 favoriteActor = "Bradl Pitt"      //แก้ไขค่าที่อยู่ในตัวแปร
 ```
 

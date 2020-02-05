@@ -46,16 +46,6 @@ var clubMember: Bool = true
 var temperature: Double = 30.7
 ```
 
-เมื่อเราต้องทำงานกับข้อมูลจำนวนมาก เราอาจกำหนดชื่อชนิดของข้อมูลขึ้นใหม่ได้จากชนิดข้อมูลพื้นฐานที่มีอยู่เดิม โดยใช้คีเวิร์ด `typealias`  
-
-```swift
-typealias intTeacher = Int
-typealias intStudent = Int
-
-var numberOfTeacher: intTeacher = 5
-var numberOfStudent: intStudent = 80
-```
-
 นอกจากประเภทของข้อมูลพื้นฐานแล้วนักพัฒนายังสามารถสร้างประเภทของข้อมูลขึ้นมาใช้เองได้ หรือเรียกว่า "User definded data type"
 
 ```swift
