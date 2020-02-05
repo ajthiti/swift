@@ -124,6 +124,17 @@ var anotherResult = (x + y) * z     // Equals 25
 * Logical AND \( `&&` \)
 * Logical OR \( `||` \)
 
+## ตัวดำเนินการอื่นๆ
+
+**Ternary conditional operator** เป็นตัวดำเนินการที่มีการตรวจสอบเงื่อนไขเพื่อการตัดสินใจในการทำงาน 
+
+```swift
+let firstNumber = 20
+let secondNumber = 60
+
+var maxNum = (firstNumber > secondNumber) ? firstNumber : secondNumber 
+```
+
 ## แหล่งข้อมูลอ้างอิง
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
