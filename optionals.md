@@ -25,8 +25,11 @@ var userInput: String?
 userInput = "Thiti"
 print(userInput)  // Optional("Thiti")
 
-let inputData:String = userInput!  // Need the '!' to unwrapped
-print(inputData)  // Thiti
+let inputData1:String = userInput!  // Need the '!' to unwrapped
+print(inputData1)  // Thiti
+
+let inputData2:String = userInput!  // Need the '!' to unwrapped
+print(inputData2)  // Thiti
 ```
 
 เนื่องจากในการนำค่าจาก Optional ไปใช้งานนั้น เราจะต้องทำการ Force unwarpping ทุกครั้ง ดังนั้น ถ้าเรามีความมั่นใจว่า Optional ที่ถูกสร้างขึ้น หลังจากที่ได้กำหนดค่าให้แล้ว Optional ดังกล่าวจะไม่มีค่าเป็น nil อีกต่อไป เราสามารถกำหนดให้ทำการ unwarp โดยอัตโนมัติได้ด้วยการระบุเครื่องหมาย ! ไว้ในส่วนท้ายของการประกาศตัวแปรเป็นแบบ Optional แทนการใช้เครื่องหมาย ? วิธีการนี้เรียกว่า **Implicitly Unwrapped Optional**
@@ -36,13 +39,13 @@ var userInput: String!
 userInput = "Thiti"
 print(userInput)  // Optional("Thiti")
 
-let inputData:String = userInput  // No need "!" to unwrapped
-print(inputData)  // Thiti
+let inputData1:String = userInput  // No need '!' to unwrapped
+print(inputData1)  // Thiti
 ```
 
 อย่างไรก็ตาม หาก Optional เกิดมีค่าเป็น nil จะส่งผลให้เกิดการทำงานผิดพลาดขึ้นได้ เพื่อป้องกันความผิดพลาดดังกล่าวที่อาจเกิดขึ้นได้ จึงควรมีการตรวจสอบค่าที่ถูกเก็บไว้ก่อนนำไปใช้งาน ดังนี้
 
-**วิธีที่ 1 :** การตรวจสอบค่าด้วย If
+**วิธีที่ 1 :** การตรวจสอบค่าด้วย if
 
 ```swift
 if userInput != nil {
@@ -51,7 +54,7 @@ if userInput != nil {
 }
 ```
 
-**วิธีที่ 2 :** การใช้ Optional Binding
+**วิธีที่ 2 :** การใช้ Optional Binding ด้วยคำสั่ง if let
 
 ```swift
 if let inputData: String = userInput {
