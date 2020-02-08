@@ -259,6 +259,13 @@ let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
 let beginning: String = greeting[..<index]  //error
 ```
 
+การใช้ Substring นั้น เหมาะสมกับการดำเนินการในช่วงสั้นๆ เท่านั้น  เนื่องจากมันมีการใช้หน่วยความจำในการจัดเก็บข้อมูลจาก String ต้นฉบับ จึงทำให้ระบบจำเป็นต้อง retain หน่วยความจำของต้นฉบับเอาไว้ตราบเท่าที่ Substring นั้นยังทำงานอยู่ ส่งผลให้เกิดความสิ้นเปลืองหน่วยความจำของระบบ ดังนั้น เมื่อต้องการจัดเก็บหรือนำข้อมูลไปใช้งานในระยะยาวจึงควรทำการแปลงชนิดให้เป็น String เสียก่อน 
+
+```swift
+// Convert the result to a String for long-term storage.
+let newString = String(beginning)
+```
+
 ## แหล่งข้อมูลอ้างอิง
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
@@ -268,6 +275,7 @@ let beginning: String = greeting[..<index]  //error
 **รายละเอียดเพื่อการอ้างอิง  
 ผู้เขียน** ธิติ ธีระเธียร    
 **วันที่เผยแพร่**  วันที่ 16 มิถุนายน 2562.  
+**วันที่ปรุงปรุงล่าสุด** วันที่ 1 กุมภาพันธ์ 2563  
 **เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/string](https://ajthiti.gitbook.io/swift/string)  
 **เงื่อนใขในการใช้งาน**  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
