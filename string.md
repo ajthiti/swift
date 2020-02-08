@@ -234,6 +234,31 @@ myString.replaceSubrange(findString!, with: "Swift")
 print(myString)  // การใช้คำสั่งในภาษา Swift เพื่อแทนที่ข้อความ
 ```
 
+### สตริงย่อย \(Substring\)
+
+เมื่อเราดำเนินการแบ่งข้อความ \(String\) ออกมาบางส่วน ผลลัพธ์ที่ได้ คือ ข้อมูลที่มีโครงสร้างเป็น String.SubSequence โดย SubSequence เป็น typealis ของ Substring ซึ่งการดำเนินการกับ Substring นั้น จะมีความสะดวกและมีประสิทธิภาพกว่าการสร้าง String ขึ้นใหม่ เนื่องจากสตริงย่อยใช้ที่เก็บข้อมูลร่วมกับ String เดิม และยังมี Method ส่วนใหญ่เช่นเดียวกับ String ดังนั้น คุนจึงสามารถทำงานกับ Substring ได้ในลักษณะเดียวกับ String  
+
+```swift
+let greeting = "Hello, world!"
+let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
+let beginning: String.SubSequence = greeting[..<index]
+// beginning is "Hello"
+
+
+// Convert the result to a String for long-term storage.
+let newString = String(beginning)
+```
+
+![String &#xE41;&#xE25;&#xE30; Substring](.gitbook/assets/screen-shot-2020-02-09-at-01.11.11.png)
+
+ในตัวอย่างข้างต้น `greeting` เป็น String ซึ่งหมายความว่า มันมีพื้นที่หน่วยความจำที่เก็บอักขระที่ประกอบขึ้นเป็นข้อความ เนื่องจาก `beginning` เป็น Substring ของ  `greeting` ดังนั้นจะเกิดความผิดพลาดขึ้นหากเขียนคำสั่ง
+
+```swift
+let greeting = "Hello, world!"
+let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
+let beginning: String = greeting[..<index]  //error
+```
+
 ## แหล่งข้อมูลอ้างอิง
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
