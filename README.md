@@ -20,7 +20,7 @@ description: >-
 
 สำหรับแหล่งข้อมูลเพื่อใช้อ้างอิงหรือประกอบการเรียนรู้วิธีการเขียนคำสั่งด้วยภาษา Swift และการพัฒนา iOS Application อย่างเป็นทางการของ Apple ประกอบด้วย
 
-* [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018
+* [The Swift Programming Language \(Swift 5.2 beta\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-2-beta/id1002622538), Apple Inc., 2020
 * [Intro to App Development with Swift](https://books.apple.com/th/book/intro-to-app-development-with-swift/id1118575552), Apple Inc., 2017.
 * [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017.
 * [Getting Started with Swift](https://developer.apple.com/videos/play/wwdc2016/404/), in WWDC 2016 - Session 404, Apple Inc., 2016.
@@ -41,9 +41,12 @@ description: >-
 {% hint style="info" %}
 **รายละเอียดเพื่อการอ้างอิง  
 ผู้เขียน** ธิติ ธีระเธียร    
-**วันที่เผยแพร่**  วันที่ 13 เมษายน 2562.  
+**วันที่เผยแพร่**  วันที่ 13 เมษายน 2562  
+**วันที่ปรุงปรุงล่าสุด** วันที่ 1 กุมภาพันธ์ 2563  
 **เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/](https://ajthiti.gitbook.io/swift/)  
 **เงื่อนใขในการใช้งาน**  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
+
+
 
