@@ -268,7 +268,7 @@ let newString = String(beginning)
 
 ## แหล่งข้อมูลอ้างอิง
 
-* [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
+* [The Swift Programming Language \(Swift 5.2 beta\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-2-beta/id1002622538), Apple Inc., 2020
 * [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017. Available on: Apple Book Store.
 
 {% hint style="info" %}
