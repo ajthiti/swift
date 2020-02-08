@@ -225,7 +225,7 @@ myUsername.insert(contentsOf: "silanukprach.com", at: myUsername.endIndex)
 print(myUsername) // ajthiti@silanukprach.com
 ```
 
-`replaceSubrange ( _: , with: )` ใช้สำหรับการแทนที่ข้อความด้วยชุดอักขระในตำแหน่งของช่วงที่กำหนด
+`replaceSubrange ( _: , with: )`  ใช้สำหรับการแทนที่ข้อความด้วยชุดอักขระในตำแหน่งของช่วงที่กำหนด
 
 ```swift
 var myString = "การใช้คำสั่งในภาษา Obj-C เพื่อแทนที่ข้อความ"
