@@ -140,6 +140,8 @@ var petName: String?
 print("สัตว์เลื้องของฉันชื่อว่า \(petName ?? "Daisy").")
 ```
 
+Range Operator เป็นตัวดำเนินการเพื่อใช้ในการกำหนดช่วงของข้อมูล 
+
 ## แหล่งข้อมูลอ้างอิง
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
