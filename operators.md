@@ -140,7 +140,38 @@ var petName: String?
 print("สัตว์เลื้องของฉันชื่อว่า \(petName ?? "Daisy").")
 ```
 
-Range Operator เป็นตัวดำเนินการเพื่อใช้ในการกำหนดช่วงของข้อมูล 
+**Range Operator** เป็นตัวดำเนินการเพื่อใช้ในการกำหนดช่วงของข้อมูล ซึ่งมักถูกใช้ร่วมกับการเขียน[คำสั่งแบบกำหนดเงื่อนไข \(Condition Statement\)](constants-variables-and-types.md) และลูป \(Loop\) โดยสามารถแบ่งออกเป็นประเภทต่างๆ ได้ดังนี้
+
+\(1\)  Closed range operator \( a...b \) เป็นการกำหนดช่วงของข้อมูลโดยเริ่มตั้งแต่ค่า a ไปจนถึงค่า b เช่น
+
+```swift
+// 1...3 Defines a range containing values 1, 2 and 3
+for value in 1...3 {
+	print(value)
+}
+```
+
+\(2\) Half-Open range operator \(a..&lt;b\) เป็นการกำหนดช่วงของข้อมูลโดยเริ่มตั้งแต่ค่า a ไปจนถึงค่า b แต่ไม่นับค่า b เช่น
+
+```swift
+// 1..<3 Defines a range containing values 1,2
+for value in 1..<3 {
+	print(value)
+}
+```
+
+\(3\) One-Sided range operator เป็นการกำหนดช่วงของข้อมูล โดยการระบุค่าแรกหรือค่าสุดท้ายของช่วงข้อมูลเพียงอย่างใดอย่างหนึ่ง เช่น
+
+```swift
+let setA = ..<2
+print(setA.contains(-1))  //true
+print(setA.contains(2))   //false
+
+let setB = 2...
+print(setB.contains(100)) //true
+print(setB.contains(1))   //false
+
+```
 
 ## แหล่งข้อมูลอ้างอิง
 
