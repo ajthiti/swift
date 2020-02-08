@@ -5,6 +5,7 @@
 * [Optionals](optionals.md)
 * [Operators](operators.md)
 * [Conditional Statement](conditional-statement.md)
+* [Loops](loops.md)
 * [String](string.md)
 * [Functions](functions.md)
 
