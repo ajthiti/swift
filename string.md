@@ -109,7 +109,7 @@ if month.lowercased() == lowercaseMonth.lowercased() {
 }
 ```
 
-### ฟังก์ชันและคุณสมบัติพื้นฐาน
+### ฟังก์ชันและคุณสมบัติพื้นฐานอื่นๆ
 
 `isEmpty` เป็น Boolean property ที่ใช้เพื่อตรวจสอบว่ามีข้อความถูกเก็บอยู่ใน String หรือไม่
 
