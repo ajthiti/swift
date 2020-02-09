@@ -89,5 +89,3 @@ for language in programmingLanguages where language.starts(with: "J") {
 
 
 
-### การใช้คำสั่ง repeat
-
