@@ -142,25 +142,18 @@ print("There are \(naturalCount) \(countedThings).")
 คำสั่ง `fallthrough` เป็น **Control Transfer Statements** ที่ถูกนำมาใช้กับ `Switch` เพื่อสั่งให้โปรแกรมยังคงทำงานต่อเนื่องใน case ถัดๆ ไป โดยไม่ต้องหยุดหรือกระโดดออกจาก scope ของ switch ตัวอย่างเช่น
 
 ```swift
-var magicNumber = 2
-
-switch magicNumber {
-    case 3:
-        print("Three.")
-        fallthrough 
-    case 2:
-        print("Two.")
+let integerToDescribe = 5
+var description = "The number \(integerToDescribe) is"
+switch integerToDescribe {
+    case 2,3,5,7,11,13,17,19:
+        description += " a prime number, and also"
         fallthrough
-    case 1:
-        print("One.")
-        fallthrough 
     default:
-        print("Done.")
+        description += " an integer."
 }
 
-// Two
-// One
-// Done
+print(description)
+//The number 5 is a prime number, and also an integer.
 ```
 
 ## แหล่งข้อมูลอ้างอิง

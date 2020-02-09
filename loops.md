@@ -128,40 +128,53 @@ print("outside of while loop")
 คำสั่ง `continue` เป็น **Control Transfer Statements** ที่ใช้เพื่อบอกให้ loop หยุดและเริ่มต้นรอบใหม่อีกครั้ง ตัวอย่างเช่น
 
 ```swift
-let puzzleInput = "great minds think alike"
-var puzzleOutput = "Output: "
-let charactersToRemove: [Character] = ["a", "e", "i", "o", "u", " "]
+var intialLevel: Int = -5, 
+var finalLevel: Int = 2
+var currentLevel: Int = intialLevel
 
-for character in puzzleInput {
-    if charactersToRemove.contains(character) {
+while currentLevel < finalLevel {
+    if intialLevel < 0 {
+        print("Starting level must be positive")
+        intialLevel = 0
+        currentLevel = intialLevel
         continue //หยุดการทำงานและเริ่มต้นรอบใหม่
     }
-    puzzleOutput.append(character)
+    currentLevel += 1
+    print("next level")
 }
 
-print(puzzleOutput)
+print("outside of while loop")
 
-// Output: grtmndsthnklk
+//Starting level must be positive
+//next level
+//next level
+//outside of while loop
 ```
 
 ### คำสั่ง break
 
-คำสั่ง `break` เป็น **Control Transfer Statements** ที่ใช้เพื่อบอกให้หยุดการทำงานและกระโดยออกจาก Loop ทันที ตัวอย่างเช่น 
+คำสั่ง `break` เป็น **Control Transfer Statements** ที่ใช้เพื่อบอกให้หยุดการทำงานและกระโดดออกจาก Loop ทันที ตัวอย่างเช่น 
 
 ```swift
-let puzzleInput = "great minds think alike"
-var puzzleOutput = "Output: "
-let charactersToRemove: [Character] = ["a", "e", "i", "o", "u", " "]
+var currentLevel:Int = 1
+var finalLevel:Int = 2
+var isLifeAvailable = true
 
-for character in puzzleInput {
-    if charactersToRemove.contains(character) {
-       break //หยุดการทำงานและโดออกจาก Loop ทันที
+while (isLifeAvailable) {
+    
+    if currentLevel > finalLevel {
+        print("Game Completed. No level remaining")
+        break //หยุดการทำงานและกระโดดออกจาก Loop
     }
-    puzzleOutput.append(character)
+    //play game and go to next level
+    currentLevel += 1
+    print("next level")
 }
 
-print(puzzleOutput)
-
-// Output: gr
+print("outside of while loop")
+//next level
+//next level
+//Game Completed. No level remaining
+//outside of while loop
 ```
 
