@@ -4,8 +4,8 @@
 * [Constants, Variables and Types](constants-variables-and-types.md)
 * [Optionals](optionals.md)
 * [Operators](operators.md)
+* [String](string.md)
 * [Conditional Statement](conditional-statement.md)
 * [Loops](loops.md)
-* [String](string.md)
 * [Functions](functions.md)
 
