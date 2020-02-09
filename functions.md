@@ -143,7 +143,7 @@ print(myArea)  // สี่เหลี่ยนมีพื้นที่ท�
 **รายละเอียดเพื่อการอ้างอิง  
 ผู้เขียน** ธิติ ธีระเธียร    
 **วันที่เผยแพร่**  วันที่ 17 มิถุนายน 2562.  
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/conditional-statement](https://ajthiti.gitbook.io/swift/functions)  
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/functions](https://ajthiti.gitbook.io/swift/functions)  
 **เงื่อนใขในการใช้งาน**  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}

@@ -97,7 +97,7 @@ var result: Double = Double(myIntNumber) + myDoubleNumber
 **รายละเอียดเพื่อการอ้างอิง  
 ผู้เขียน** ธิติ ธีระเธียร    
 **วันที่เผยแพร่**  วันที่ 25 เมษายน 2562.  
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/constants-variables-and-types](https://ajthiti.gitbook.io/swift/constants-variables-and-types)  
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/](https://ajthiti.gitbook.io/swift/)  
 **เงื่อนใขในการใช้งาน**  
 This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
