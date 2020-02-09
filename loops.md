@@ -178,3 +178,19 @@ print("outside of while loop")
 //outside of while loop
 ```
 
+## แหล่งข้อมูลอ้างอิง
+
+* [The Swift Programming Language \(Swift 5.2 beta\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-2-beta/id1002622538), Apple Inc., 2020
+* [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017. Available on: Apple Book Store.
+
+
+
+{% hint style="info" %}
+**รายละเอียดเพื่อการอ้างอิง  
+ผู้เขียน** ธิติ ธีระเธียร    
+**วันที่เผยแพร่**  วันที่ 9 กุมภาพันธ์ 2563  
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/loops](https://ajthiti.gitbook.io/swift/loops)  
+**เงื่อนใขในการใช้งาน**  
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+{% endhint %}
+
