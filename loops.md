@@ -55,7 +55,7 @@ for _ in 1...power {
 print("\(base) to the power of \(power) is \(answer)")
 ```
 
-ในกรณีที่ต้องการเพิ่มสเต็ปการนับให้มีค่ามากกว่าหรือน้อยกว่า 1 สามารถทำได้ โดยใช้คำสั่ง `stride(from: to: by: )`
+การใช้คำสั่ง `stride(from: to: by: )` เพื่อการเพิ่มสเต็ปการนับ
 
 ```swift
 for i in stride(from: 0, to: 50, by: 5) {
@@ -70,7 +70,7 @@ for j in stride(from: 50, to: 0, by: -5) {
 // 50,45,40,35,30,25,20,15,10,5
 ```
 
-รวมทั้งสามารถกำหนดเงื่อนไขเพิ่มเติมในการทำงานได้โดยใช้คำสั่ง where
+การใช้คำสั่ง `where` เพื่อกำหนดเงื่อนไขเพิ่มเติมในการทำงาน
 
 ```swift
 let programmingLanguages = ["Swift", "Java", "Obj-C", "JavaScript", "Kotlin", "Python"]
