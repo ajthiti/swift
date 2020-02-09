@@ -123,3 +123,45 @@ repeat {
 print("outside of while loop")
 ```
 
+### คำสั่ง Continue
+
+คำสั่ง `continue` เป็น **Control Transfer Statements** ที่ใช้เพื่อบอกให้ loop หยุดและเริ่มต้นรอบใหม่อีกครั้ง ตัวอย่างเช่น
+
+```swift
+let puzzleInput = "great minds think alike"
+var puzzleOutput = "Output: "
+let charactersToRemove: [Character] = ["a", "e", "i", "o", "u", " "]
+
+for character in puzzleInput {
+    if charactersToRemove.contains(character) {
+        continue //หยุดการทำงานและเริ่มต้นรอบใหม่
+    }
+    puzzleOutput.append(character)
+}
+
+print(puzzleOutput)
+
+// Output: grtmndsthnklk
+```
+
+### คำสั่ง break
+
+คำสั่ง `break` เป็น **Control Transfer Statements** ที่ใช้เพื่อบอกให้หยุดการทำงานและกระโดยออกจาก Loop ทันที ตัวอย่างเช่น 
+
+```swift
+let puzzleInput = "great minds think alike"
+var puzzleOutput = "Output: "
+let charactersToRemove: [Character] = ["a", "e", "i", "o", "u", " "]
+
+for character in puzzleInput {
+    if charactersToRemove.contains(character) {
+       break //หยุดการทำงานและโดออกจาก Loop ทันที
+    }
+    puzzleOutput.append(character)
+}
+
+print(puzzleOutput)
+
+// Output: gr
+```
+

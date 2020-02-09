@@ -137,6 +137,32 @@ print("There are \(naturalCount) \(countedThings).")
 // Prints "There are dozens of moons orbiting Saturn.
 ```
 
+### คำสั่ง fallthrough
+
+คำสั่ง `fallthrough` เป็น **Control Transfer Statements** ที่ถูกนำมาใช้กับ `Switch` เพื่อสั่งให้โปรแกรมยังคงทำงานต่อเนื่องใน case ถัดๆ ไป โดยไม่ต้องหยุดหรือกระโดดออกจาก scope ของ switch ตัวอย่างเช่น
+
+```swift
+var magicNumber = 2
+
+switch magicNumber {
+    case 3:
+        print("Three.")
+        fallthrough 
+    case 2:
+        print("Two.")
+        fallthrough
+    case 1:
+        print("One.")
+        fallthrough 
+    default:
+        print("Done.")
+}
+
+// Two
+// One
+// Done
+```
+
 ## แหล่งข้อมูลอ้างอิง
 
 * [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
