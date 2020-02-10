@@ -69,3 +69,13 @@ let bigUInt16 = 1440
 let bitUInt8: UInt8 = UInt8(bigUInt16) // Compiler error.
 ```
 
+การแปลงค่าระหว่าง Integer และ Floating-Point number
+
+```swift
+let startingRatio = 1  // กำหนดเป็น Int
+let frationalRatio = 0.61803398875 //กำหนดเป็น Double
+
+let goldenRatio = Double(startingRatio) +  frationalRatio
+// goldenRatio มีค่าเท่ากับ 1.61803398875 และเป็น Double
+```
+
