@@ -121,3 +121,16 @@ print(numFormat.string(from: 13.2)!) //13.200
 
 สามารถศึกษาเกี่ยวกับ NumberFormatter เพิ่มเติมได้ที่ [https://developer.apple.com/documentation/foundation/numberformatter](https://developer.apple.com/documentation/foundation/numberformatter)
 
+## แหล่งข้อมูลอ้างอิง
+
+* [The Swift Programming Language \(Swift 5.2 beta\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-2-beta/id1002622538), Apple Inc., 2020
+
+{% hint style="info" %}
+**รายละเอียดเพื่อการอ้างอิง  
+ผู้เขียน** ธิติ ธีระเธียร    
+**วันที่เผยแพร่**  วันที่ 10 กุมภาพันธ์ 2563  
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/number](https://ajthiti.gitbook.io/swift/number)  
+**เงื่อนใขในการใช้งาน**  
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+{% endhint %}
+
