@@ -99,9 +99,26 @@ let integerGoldenRatio = Int(goldenRatio)
 
 เราสามารถจัดรูปแบบการแสดงผลของตัวเลขได้โดยใช้ NumberFormatter ซึ่งมีตัวอย่างการใช้งานดังนี้
 
+```swift
+let numFormat = NumberFormatter()
+numFormat.numberStyle = .decimal  //ระบุว่าต้องการจัดรูปแบบเป็นเลขฐาน 10
 
+//การจัดรูปแบบการแสดงตัวเลขเป็นข้อความด้วย string(for:)
+if let result = numFormat.string(from: 10459) {
+    print(result)   // 10,459
+}
 
+print(numFormat.string(from: 2956)!) //2,956
+print(numFormat.string(from: 1352.567985)!) //1,352.568
 
+//กรณีต้องการระบุจำนวนทศนิยมที่ใช้แสดงผล
+numFormat.maximumFractionDigits = 2
+print(numFormat.string(from: 1352.567985)!) //1,352.57
+
+numFormat.minimumFractionDigits = 3
+print(numFormat.string(from: 13.2)!) //13.200
+
+```
 
 สามารถศึกษาเกี่ยวกับ NumberFormatter เพิ่มเติมได้ที่ [https://developer.apple.com/documentation/foundation/numberformatter](https://developer.apple.com/documentation/foundation/numberformatter)
 
