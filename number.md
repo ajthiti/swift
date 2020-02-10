@@ -36,5 +36,22 @@ print(Int.max)
   * ช่วงข้อมูลของ `Int` คือ  -9,223,372,036,854,775,808 ถึง 9,223,372,036,854,775,807 
   * ช่วงข้อมูลของ `UInt` คือ 0 ถึง 18,446,744,073,709,551,615
 
-### floating-point
+### Floating-Point Number
+
+Floating-Point Number คือ ตัวแปรหรือค่าคงที่ ซึ่งใช้เก็บข้อมูลตัวเลขแบบมีทศนิยม เช่น 4.357 หรือ 0.41 เป็นต้น ซึ่งค่าเริ่มต้นของข้อมูล คือ 0.0 และมีให้เลือกใช้อยู่ 2 รูปแบบ คือ
+
+* Float \(ขนาด: 32 บิต, ความแม่นยำ ≥6 decimal digits\)
+* Double \(ขนาด: 64 บิต, ความแม่นยำ ≥15 decimal digits\)
+
+```swift
+//Float data type
+let floatingScore:Float = 100.232
+print(floatingScore)
+
+//Double data type
+let doubleScore:Double = 100.232321212121
+print(doubleScore)
+```
+
+
 
