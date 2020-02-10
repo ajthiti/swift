@@ -45,11 +45,11 @@ Floating-Point Number คือ ตัวแปรหรือค่าคงท
 
 ```swift
 //Float data type
-let floatingScore:Float = 100.232
+let floatingScore: Float = 100.232
 print(floatingScore)
 
 //Double data type
-let doubleScore:Double = 100.232321212121
+let doubleScore: Double = 100.232321212121
 print(doubleScore)
 ```
 
@@ -58,9 +58,14 @@ print(doubleScore)
 การแปลงค่าระหว่าง Integer และ Integer
 
 ```swift
-let daysInYear : Int16 = 365
-let daysInJanuary : UInt8 = 31
+let daysInYear: Int16 = 365
+let daysInJanuary: UInt8 = 31
 let totalDays = daysInYear + Int16(daysInJanuary)
-//396
+
+let littleUInt16 = 120
+let littleUInt8: UInt8 = UInt8(littleUInt16)
+
+let bigUInt16 = 1440
+let bitUInt8: UInt8 = UInt8(bigUInt16) // Compiler error.
 ```
 
