@@ -77,5 +77,8 @@ let frationalRatio = 0.61803398875 //กำหนดเป็น Double
 
 let goldenRatio = Double(startingRatio) +  frationalRatio
 // goldenRatio มีค่าเท่ากับ 1.61803398875 และเป็น Double
+
+let integerGoldenRatio = Int(goldenRatio)
+//goldenRatio มีค่าเท่ากับ 1 และเป็น Int
 ```
 
