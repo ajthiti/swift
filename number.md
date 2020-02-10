@@ -53,5 +53,14 @@ let doubleScore:Double = 100.232321212121
 print(doubleScore)
 ```
 
+### Numeric Type Conversion
 
+การแปลงค่าระหว่าง Integer และ Integer
+
+```swift
+let daysInYear : Int16 = 365
+let daysInJanuary : UInt8 = 31
+let totalDays = daysInYear + Int16(daysInJanuary)
+//396
+```
 
