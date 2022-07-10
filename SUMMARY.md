@@ -12,3 +12,4 @@
 * [Loops](loops.md)
 * [Functions](functions.md)
 * [Closure](closure.md)
+* [Enumeration](enumeration.md)
