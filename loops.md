@@ -9,9 +9,9 @@ description: >-
 
 ### For loop
 
-คำสั่ง `for` จะถูกใช้เพื่อสั่งให้โปรแกรมดำเนินการตามคำสั่งที่อยู่ในบล็อก {...} แบบวนซ้ำตามจำนวนรอบที่กำหนดไว้ ซึ่งมักใช้คู่กับ Range Operator เพื่อระบุขอบเขตของการนับรอบการทำงานผ่าน **ตัววนซ้ำ \(iterator\)** 
+คำสั่ง `for` จะถูกใช้เพื่อสั่งให้โปรแกรมดำเนินการตามคำสั่งที่อยู่ในบล็อก {...} แบบวนซ้ำตามจำนวนรอบที่กำหนดไว้ ซึ่งมักใช้คู่กับ Range Operator เพื่อระบุขอบเขตของการนับรอบการทำงานผ่าน **ตัววนซ้ำ (iterator)**&#x20;
 
-![&#xE1C;&#xE31;&#xE07;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; for](.gitbook/assets/untitled-diagram-2%20%281%29.png)
+![ผังงานของคำสั่ง for](<.gitbook/assets/Untitled Diagram-2 (1).png>)
 
 ตัวอย่างการใช้คำสั่ง `for`
 
@@ -87,9 +87,9 @@ for language in programmingLanguages where language.starts(with: "J") {
 
 ### While loop
 
-คำสั่ง `while` จะถูกใช้เพื่อสั่งให้โปรแกรมดำเนินการตามคำสั่งที่อยู่ในบล็อก {...} แบบวนซ้ำ จนกว่าเงื่อนไขที่กำหนดจะมีค่าเป็นเท็จ \(false\) ซึ่งมีการใช้งานอยู่ 2 รูปแบบ คือ `while` และ `repeat...while`
+คำสั่ง `while` จะถูกใช้เพื่อสั่งให้โปรแกรมดำเนินการตามคำสั่งที่อยู่ในบล็อก {...} แบบวนซ้ำ จนกว่าเงื่อนไขที่กำหนดจะมีค่าเป็นเท็จ (false) ซึ่งมีการใช้งานอยู่ 2 รูปแบบ คือ `while` และ `repeat...while`
 
-![&#xE1C;&#xE31;&#xE07;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; while &#xE41;&#xE25;&#xE30; repeat ... while](.gitbook/assets/untitled-diagram-3%20%281%29.png)
+![ผังงานของคำสั่ง while และ repeat ... while](<.gitbook/assets/Untitled Diagram-3 (1).png>)
 
 ตัวอย่างการใช้คำสั่ง `while`
 
@@ -153,7 +153,7 @@ print("outside of while loop")
 
 ### คำสั่ง break
 
-คำสั่ง `break` เป็น **Control Transfer Statements** ที่ใช้เพื่อบอกให้หยุดการทำงานและกระโดดออกจาก Loop ทันที ตัวอย่างเช่น 
+คำสั่ง `break` เป็น **Control Transfer Statements** ที่ใช้เพื่อบอกให้หยุดการทำงานและกระโดดออกจาก Loop ทันที ตัวอย่างเช่น&#x20;
 
 ```swift
 var currentLevel:Int = 1
@@ -180,17 +180,16 @@ print("outside of while loop")
 
 ## แหล่งข้อมูลอ้างอิง
 
-* [The Swift Programming Language \(Swift 5.2 beta\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-2-beta/id1002622538), Apple Inc., 2020
+* [The Swift Programming Language (Swift 5.2 beta)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-2-beta/id1002622538), Apple Inc., 2020
 * [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017. Available on: Apple Book Store.
 
 
 
 {% hint style="info" %}
-**รายละเอียดเพื่อการอ้างอิง  
-ผู้เขียน** ธิติ ธีระเธียร    
-**วันที่เผยแพร่**  วันที่ 9 กุมภาพันธ์ 2563  
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/loops](https://ajthiti.gitbook.io/swift/loops)  
-**เงื่อนใขในการใช้งาน**  
-This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+**รายละเอียดเพื่อการอ้างอิง**\
+**ผู้เขียน** ธิติ ธีระเธียร  \
+**วันที่เผยแพร่**  วันที่ 9 กุมภาพันธ์ 2563\
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/loops](https://ajthiti.gitbook.io/swift/loops)\
+**เงื่อนใขในการใช้งาน**\
+****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
-

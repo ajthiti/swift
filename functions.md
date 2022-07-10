@@ -8,7 +8,7 @@ description: >-
 
 ### การสร้างฟังก์ชัน
 
-โดยทั่วไป ฟังก์ชันจะประกอบด้วย **ชื่อเรียก\(name\)**, **ค่าสำหรับการทำงาน \(parameters\)** และ**ค่าที่ส่งกลับ \(return\)** ซึ่งการนิยาม \(defining\) การทำงานของฟังก์ชันสามารถทำได้ ดังนี้
+โดยทั่วไป ฟังก์ชันจะประกอบด้วย **ชื่อเรียก(name)**, **ค่าสำหรับการทำงาน (parameters)** และ**ค่าที่ส่งกลับ (return)** ซึ่งการนิยาม (defining) การทำงานของฟังก์ชันสามารถทำได้ ดังนี้
 
 ```swift
 func functionName (parameters) -> ReturnType {
@@ -29,10 +29,12 @@ var totResult = addNumber(firstNumber: 3, secondNumber: 15)
 print(totResult) // 18
 ```
 
-* `addNumber`  คือ ชื่อฟังก์ชัน \(functionName\) ซึ่งใช้กำกับเพื่อการเรียนใช้งานฟังก์ชัน
-* `firstNumber: Int` และ `secondNumber: Int`  คือ พารามิเตอร์ \(parameters\) ซึ่งประกอบไปด้วยชื่อและประเภทของพารามิเตอร์ที่จะรับเข้ามาเพื่อใช้ในการทำงานตามคำสั่งภายในฟังก์ชัน
+* `addNumber`  คือ ชื่อฟังก์ชัน (functionName) ซึ่งใช้กำกับเพื่อการเรียนใช้งานฟังก์ชัน
+* `firstNumber: Int` และ `secondNumber: Int`  คือ พารามิเตอร์ (parameters) ซึ่งประกอบไปด้วยชื่อและประเภทของพารามิเตอร์ที่จะรับเข้ามาเพื่อใช้ในการทำงานตามคำสั่งภายในฟังก์ชัน
 * `-> Int` คือ ประเภทของค่าที่จะส่งกลับหลังจากการทำงานตามคำสั่งเสร็จสิ้น โดยจะต้องสอดคล้องกับที่ระบุไว้ที่ return
-* `addNumber(firstNumber: 3 , secondNumber: 15)` คือ การเรียกใช้ฟังก์ชัน \(call\) พร้อมกับส่งอาร์กิวเมนต์ \(Argument\) จำนวน 2 ค่า คือ 3 และ 5 ไปเพื่อเป็นพารามิเตอร์สำหรับใช้ในการประมวลผลของฟังก์ชัน และรับผลลัพธ์ที่ได้มาเก็บไว้ในตัวแปร ชื่อ totResult  \* อาร์กิวเมนต์  คือ ข้อมูลที่ส่งให้กับพารามิเตอร์ของฟังก์ชัน
+* `addNumber(firstNumber: 3 , secondNumber: 15)` คือ การเรียกใช้ฟังก์ชัน (call) พร้อมกับส่งอาร์กิวเมนต์ (Argument) จำนวน 2 ค่า คือ 3 และ 5 ไปเพื่อเป็นพารามิเตอร์สำหรับใช้ในการประมวลผลของฟังก์ชัน และรับผลลัพธ์ที่ได้มาเก็บไว้ในตัวแปร ชื่อ totResult\
+  \
+  \* อาร์กิวเมนต์  คือ ข้อมูลที่ส่งให้กับพารามิเตอร์ของฟังก์ชัน
 
 ### ฟังก์ชันที่ไม่มีพารามิเตอร์และไม่มีการรีเทิร์นค่า
 
@@ -77,7 +79,7 @@ var result = multiply(firstNumber: 3, secondNumber: 5)
 print(result)  // 15
 ```
 
-### การใช้พารามิเตอร์แบบ External และ Local name 
+### การใช้พารามิเตอร์แบบ External และ Local name&#x20;
 
 ```swift
 func sayHello(to person: String, and anotherPerson: String) {
@@ -87,7 +89,7 @@ func sayHello(to person: String, and anotherPerson: String) {
 sayHello(to: "Thiti", and: "Looknam")  // Hello! Thiti and Looknam.
 ```
 
-หากเราต้องการเรียกใช้ฟังก์ชัน โดยละเว้นการระบุชื่ออาร์กิวเมนต์ \(Omiting label\) สามารถทำได้ โดยใช้เครื่องหมาย  `_`  ระบุไว้แทนชื่อพารามิเตอร์ของฟังก์ชัน
+หากเราต้องการเรียกใช้ฟังก์ชัน โดยละเว้นการระบุชื่ออาร์กิวเมนต์ (Omiting label) สามารถทำได้ โดยใช้เครื่องหมาย `_` ระบุไว้แทนชื่อพารามิเตอร์ของฟังก์ชัน
 
 ```swift
 func sayHello(_ person: String, _ anotherPerson: String) {
@@ -99,7 +101,7 @@ sayHello("Thiti", "Looknam")  // Hello! Thiti and Looknam.
 
 ### การกำหนดค่าเริ่มต้นให้กับพารามิเตอร์
 
-เราสามารถกำหนดค่าเริ่มต้น \(default value\) ให้กับพารามิเตอร์ได้ ซึ่งหากเราไม่มีการผ่านค่าไปยังฟังก์ชัน ฟังก์ชันก็จะใช้ค่าดังกล่าวแทนทันที
+เราสามารถกำหนดค่าเริ่มต้น (default value) ให้กับพารามิเตอร์ได้ ซึ่งหากเราไม่มีการผ่านค่าไปยังฟังก์ชัน ฟังก์ชันก็จะใช้ค่าดังกล่าวแทนทันที
 
 ```swift
 func power(number: Int, by: Int = 2) -> Int {
@@ -134,17 +136,59 @@ myArea = rectArea(width: 5.0, height: nil)
 print(myArea)  // สี่เหลี่ยนมีพื้นที่ทั้งหมด 25.0 ตารางเมตร
 ```
 
+### Function Type
+
+ในภาษา Swift เราสามารถนำฟังก์ชั่นมาใช้เป็นชนิดข้อมูลได้ โดยเราสามารถเขียนตัวแปรที่มีชนิดเป็นฟังก์ชัน (หรือเรียกว่า function type) ได้ในรูปแบบ ดังนี้
+
+```swift
+(parameter type, parameter type) -> return ReturnType
+```
+
+#### (1) การใช้ Function Type ในรูปแบบตัวแปร
+
+```swift
+func addTwoInt(_ firstInt: Int, _ secondInt: Int) -> Int {
+    return firstInt + secondInt
+}
+
+func multiplyTwoInt(_ firstInt: Int, _ secondInt: Int) -> Int {
+    return firstInt * secondInt
+}
+
+var myFunc: (Int, Int) -> Int
+myFunc = addTwoInt
+print(myFunc(7, 5))    // 12
+
+myFunc = multiplyTwoInt
+print(myFunc(7, 5))     // 35
+```
+
+#### (2) การใช้ Function Type ในแบบพารามิเตอร์
+
+```swift
+func multiplyTwoInt(_ firstInt: Int, _ secondInt: Int) -> Int {
+    return firstInt * secondInt
+}
+
+func calculate(a: Int, b: Int, operation: (Int, Int) -> Int ) -> Int {
+    return operation(a,b) 
+}
+
+
+let result = calculate(a: 10, b: 5, operation: multiplyTwoInt)
+print(result)
+```
+
 ## แหล่งข้อมูลอ้างอิง
 
-* [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
+* [The Swift Programming Language (Swift 5.0)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
 * [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017. Available on: Apple Book Store.
 
 {% hint style="info" %}
-**รายละเอียดเพื่อการอ้างอิง  
-ผู้เขียน** ธิติ ธีระเธียร    
-**วันที่เผยแพร่**  วันที่ 17 มิถุนายน 2562.  
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/functions](https://ajthiti.gitbook.io/swift/functions)  
-**เงื่อนใขในการใช้งาน**  
-This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+**รายละเอียดเพื่อการอ้างอิง**\
+**ผู้เขียน** ธิติ ธีระเธียร  \
+**วันที่เผยแพร่**  วันที่ 17 มิถุนายน 2562.\
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/functions](https://ajthiti.gitbook.io/swift/functions)\
+**เงื่อนใขในการใช้งาน**\
+****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
-

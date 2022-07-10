@@ -9,9 +9,9 @@ description: >-
 
 ### การใช้คำสั่ง If
 
-คำสั่ง `if` เป็นการกำหนดให้โปรแกรมทำงานตามคำสั่งที่อยู่ใน Scope ของ {...} เมื่อตรวจสอบเงื่อนไขแล้ว พบว่า ผลลัพธ์ของการทำงานมีค่าเป็น "จริง \(true\)"
+คำสั่ง `if` เป็นการกำหนดให้โปรแกรมทำงานตามคำสั่งที่อยู่ใน Scope ของ {...} เมื่อตรวจสอบเงื่อนไขแล้ว พบว่า ผลลัพธ์ของการทำงานมีค่าเป็น "จริง (true)"
 
-![&#xE1C;&#xE31;&#xE07;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; If](.gitbook/assets/untitled-diagram.png)
+![ผังงานของคำสั่ง If](<.gitbook/assets/Untitled Diagram.png>)
 
 ตัวอย่างในการใช้คำสั่ง `If`
 
@@ -25,9 +25,9 @@ if temperatureInFahrenheit <= 32 {
 
 ### การใช้คำสั่ง If...else
 
-คำสั่ง `if...else` เป็นการกำหนดให้โปรแกรมทำงานตามคำสั่งที่อยู่ใน Scope ก่อน else เมื่อตรวจสอบเงื่อนไขแล้ว พบว่า ผลลัพธ์ของการทำงานมีค่าเป็น "จริง \(true\)" และจะทำตาม Scope ซึ่งอยู่หลัง else เมื่อตรวจสอบเงือนไขแล้ว พบว่า ผลลัพธ์ของการทำงานมีค่าเป็น "เท็จ \(false\)" 
+คำสั่ง `if...else` เป็นการกำหนดให้โปรแกรมทำงานตามคำสั่งที่อยู่ใน Scope ก่อน else เมื่อตรวจสอบเงื่อนไขแล้ว พบว่า ผลลัพธ์ของการทำงานมีค่าเป็น "จริง (true)" และจะทำตาม Scope ซึ่งอยู่หลัง else เมื่อตรวจสอบเงือนไขแล้ว พบว่า ผลลัพธ์ของการทำงานมีค่าเป็น "เท็จ (false)"&#x20;
 
-![&#xE1C;&#xE31;&#xE07;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; If...else](.gitbook/assets/untitled-diagram-2.png)
+![ผังงานของคำสั่ง If...else](<.gitbook/assets/Untitled Diagram-2.png>)
 
 ตัวอย่างในการใช้คำสั่ง `If...else`
 
@@ -41,9 +41,9 @@ if temperatureInFahrenheit <= 32 {
 }
 ```
 
-ในกรณีที่ต้องการให้มีทางเลือกในการทำงานมากกว่า 2 ทางเลือก เราจะสามารถใช้คำสั่ง `else if` เพื่อกำหนดเงื่อนไขที่ต้องตรวจสอบเป็นลำดับชั้น โดยโปรแกรมจะประมวลผลคำสั่งซึ่งอยู่ภายใน scope ของเงื่อนไขที่เป็น จริง \(true\) เพียงทางเลือกเดียวเท่านั้น แต่หากตรวจพบว่าไม่มีเงื่อนไขใดเลยที่เป็นจริง โปรแกรมจะทำคำสั่งสุดท้าย
+ในกรณีที่ต้องการให้มีทางเลือกในการทำงานมากกว่า 2 ทางเลือก เราจะสามารถใช้คำสั่ง `else if` เพื่อกำหนดเงื่อนไขที่ต้องตรวจสอบเป็นลำดับชั้น โดยโปรแกรมจะประมวลผลคำสั่งซึ่งอยู่ภายใน scope ของเงื่อนไขที่เป็น จริง (true) เพียงทางเลือกเดียวเท่านั้น แต่หากตรวจพบว่าไม่มีเงื่อนไขใดเลยที่เป็นจริง โปรแกรมจะทำคำสั่งสุดท้าย
 
-![&#xE1C;&#xE31;&#xE07;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; else If](.gitbook/assets/untitled-diagram-3.png)
+![ผังงานของคำสั่ง else If](<.gitbook/assets/Untitled Diagram-3.png>)
 
 ตัวอย่างในการใช้คำสั่ง `else if`
 
@@ -88,7 +88,7 @@ print(timeOfDay)
 
 คำสั่ง `switch` ใช้สำหรับการเลือกทำแบบหลายทางเลือกซึ่งพิจารณาจากการตรวจสอบค่าในตัวแปร โดยแบ่งทางเลือกต่าง ๆ ออกเป็น case ซึ่งแต่ละ case จะต้องมีค่าไม่ซ้ำกัน และหากผลการตรวจสอบค่าของตัวแปรนั้นไม่ตรงกับ case ใดเลย จะทำคำสั่งใน default
 
-![&#xE1C;&#xE31;&#xE07;&#xE07;&#xE32;&#xE19;&#xE02;&#xE2D;&#xE07;&#xE04;&#xE33;&#xE2A;&#xE31;&#xE48;&#xE07; switch](.gitbook/assets/untitled-diagram-5.png)
+![ผังงานของคำสั่ง switch](<.gitbook/assets/Untitled Diagram-5.png>)
 
 ตัวอย่างในการใช้ `switch`
 
@@ -107,6 +107,19 @@ case "Grade 4", "Grade 5", "Grade 6":
     projectName = "Student's choice"
 default:
     projectName = "N/A"
+}
+```
+
+```swift
+let someCharacter: Character = "e"
+switch someCharacter {
+case "a", "e", "i", "o", "u":
+    print("\(someCharacter) is a vowel")
+case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
+     "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
+    print("\(someCharacter) is a consonant")
+default:
+    print("\(someCharacter) is not a vowel or a consonant")
 }
 ```
 
@@ -158,17 +171,16 @@ print(description)
 
 ## แหล่งข้อมูลอ้างอิง
 
-* [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
+* [The Swift Programming Language (Swift 5.0)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
 * [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017. Available on: Apple Book Store.
 
 
 
 {% hint style="info" %}
-**รายละเอียดเพื่อการอ้างอิง  
-ผู้เขียน** ธิติ ธีระเธียร    
-**วันที่เผยแพร่**  วันที่ 6 พฤษภาคม 2562.  
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/conditional-statement](https://ajthiti.gitbook.io/swift/conditional-statement)  
-**เงื่อนใขในการใช้งาน**  
-This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+**รายละเอียดเพื่อการอ้างอิง**\
+**ผู้เขียน** ธิติ ธีระเธียร  \
+**วันที่เผยแพร่**  วันที่ 6 พฤษภาคม 2562.\
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/conditional-statement](https://ajthiti.gitbook.io/swift/conditional-statement)\
+**เงื่อนใขในการใช้งาน**\
+****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
-

@@ -15,7 +15,7 @@ let companyName = "บจ.ศิลานักปราชญ์"
 var companyCEO = "คุณธิติ ธีระเธียร"
 ```
 
-การสร้างข้อความใหม่จาก String ตั้งแต่ 2 ค่าขึ้นไป ทำได้โดยใช้เครื่องหมาย `+` \(Additional operator\) เพื่อเชื่อมต่อ \(Concatenation\) ข้อความ ดังนี้
+การสร้างข้อความใหม่จาก String ตั้งแต่ 2 ค่าขึ้นไป ทำได้โดยใช้เครื่องหมาย `+` (Additional operator) เพื่อเชื่อมต่อ (Concatenation) ข้อความ ดังนี้
 
 ```swift
 var message = "Hello" + " " + "my name is "
@@ -23,12 +23,12 @@ let name = "Thiti"
 message += name      // "Hello my name is Thiti"
 ```
 
-หากต้องการแสดงอักขระ เช่น ' \(Single quote\) , " \(Double quote\) , \\(Backslash\) หรือ กำหนดให้แสดงการเว้นวรรคด้วย Tab ในข้อความ จะสามารถทำได้โดยใช้ escape charector ดังนี้
+หากต้องการแสดงอักขระ เช่น ' (Single quote) , " (Double quote) , \\(Backslash) หรือ กำหนดให้แสดงการเว้นวรรคด้วย Tab ในข้อความ จะสามารถทำได้โดยใช้ escape charector ดังนี้
 
 * `\'`  หมายถึง การแสดงเครื่องหมาย  Single quote
 * `\"`  หมายถึง การแสดงเครื่องหมาย Double quote
 * `\\` หมายถึง การแสดงเครื่องหมาย  Backslash
-* `\t`  หมายถึง การเว้นวรรคด้วย tab
+* `\t` หมายถึง การเว้นวรรคด้วย tab
 * `\n` หมายถึง การขึ้นบรรทัดใหม่
 
 ตัวอย่างเช่น
@@ -38,7 +38,7 @@ let greeting = "การแสดงข้อความว่า \"Hello, wor
 print(greeting) // การแสดงข้อความว่า "Hello, world!"
 ```
 
-ในบางครั้ง เราอาจจะต้องการนำค่าที่เก็บไว้ในตัวแปรหรือค่าคงที่มาแทรกลงในข้อความ \(Interpolation\) ซึ่งสามารถทำได้โดยใช้  `\(`ชื่อตัวแปรหรือค่าคงที่`)` ตัวอย่างเช่น
+ในบางครั้ง เราอาจจะต้องการนำค่าที่เก็บไว้ในตัวแปรหรือค่าคงที่มาแทรกลงในข้อความ (Interpolation) ซึ่งสามารถทำได้โดยใช้  `\(`ชื่อตัวแปรหรือค่าคงที่`)` ตัวอย่างเช่น
 
 ```swift
 let firstName = "Looknam"
@@ -51,9 +51,9 @@ let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 // message is "3 times 2.5 is 7.5"
 ```
 
-### ตัวอักขระ \(Character Type\)
+### ตัวอักขระ (Character Type)
 
-Character Type จะใช้ในการจัดเก็บ "ตัวอักขระ" เพียงตัวเดียว เช่น "ก", "A" , " は" หรือ "!" เป็นต้น 
+Character Type จะใช้ในการจัดเก็บ "ตัวอักขระ" เพียงตัวเดียว เช่น "ก", "A" , " は" หรือ "!" เป็นต้น&#x20;
 
 ```swift
 let exclamationMark: Character = "!"
@@ -75,7 +75,7 @@ switch someCharacter {
 
 ### การเปรียบเทียบข้อความ
 
-ข้อความในภาษา Swift ลักษณะเป็นแบบ case-sensitive กล่าวคือ หากทำการเปรียบเทียบค่าของ "January" และ "january" จะได้ผลลัพธ์ว่าเป็นข้อความที่มีค่าไม่เท่ากัน เราสามารถนำข้อความมาเปรียบเทียบกันได้โดยใช้ **ตัวดำเนินการเปรียบเทียบ \(Comparison Operators\)** ดังอย่างต่อไปนี้
+ข้อความในภาษา Swift ลักษณะเป็นแบบ case-sensitive กล่าวคือ หากทำการเปรียบเทียบค่าของ "January" และ "january" จะได้ผลลัพธ์ว่าเป็นข้อความที่มีค่าไม่เท่ากัน เราสามารถนำข้อความมาเปรียบเทียบกันได้โดยใช้ **ตัวดำเนินการเปรียบเทียบ (Comparison Operators)** ดังอย่างต่อไปนี้
 
 ```swift
 let month = "January"
@@ -120,7 +120,7 @@ if myString.isEmpty {
 }
 ```
 
-`count` เป็น property ที่ใช้เพื่อการนับจำนวนตัวอักขระ \(Character\) ใน String 
+`count` เป็น property ที่ใช้เพื่อการนับจำนวนตัวอักขระ (Character) ใน String&#x20;
 
 ```swift
 let myName = "Thiti Theerathean"
@@ -225,7 +225,7 @@ myUsername.insert(contentsOf: "silanukprach.com", at: myUsername.endIndex)
 print(myUsername) // ajthiti@silanukprach.com
 ```
 
-`replaceSubrange ( _: , with: )`  ใช้สำหรับการแทนที่ข้อความด้วยชุดอักขระในตำแหน่งของช่วงที่กำหนด
+`replaceSubrange ( _: , with: )` ใช้สำหรับการแทนที่ข้อความด้วยชุดอักขระในตำแหน่งของช่วงที่กำหนด
 
 ```swift
 var myString = "การใช้คำสั่งในภาษา Obj-C เพื่อแทนที่ข้อความ"
@@ -234,9 +234,9 @@ myString.replaceSubrange(findString!, with: "Swift")
 print(myString)  // การใช้คำสั่งในภาษา Swift เพื่อแทนที่ข้อความ
 ```
 
-### สตริงย่อย \(Substring\)
+### สตริงย่อย (Substring)
 
-เมื่อเราดำเนินการแบ่งข้อความ \(String\) ออกมาบางส่วน ผลลัพธ์ที่ได้ คือ ข้อมูลที่มีโครงสร้างเป็น String.SubSequence โดย SubSequence เป็น typealis ของ Substring ซึ่งการดำเนินการกับ Substring นั้น จะมีความสะดวกและมีประสิทธิภาพกว่าการสร้าง String ขึ้นใหม่ เนื่องจากสตริงย่อยใช้ที่เก็บข้อมูลร่วมกับ String เดิม และยังมี Method ส่วนใหญ่เช่นเดียวกับ String ดังนั้น คุนจึงสามารถทำงานกับ Substring ได้ในลักษณะเดียวกับ String  
+เมื่อเราดำเนินการแบ่งข้อความ (String) ออกมาบางส่วน ผลลัพธ์ที่ได้ คือ ข้อมูลที่มีโครงสร้างเป็น String.SubSequence โดย SubSequence เป็น typealis ของ Substring ซึ่งการดำเนินการกับ Substring นั้น จะมีความสะดวกและมีประสิทธิภาพกว่าการสร้าง String ขึ้นใหม่ เนื่องจากสตริงย่อยใช้ที่เก็บข้อมูลร่วมกับ String เดิม และยังมี Method ส่วนใหญ่เช่นเดียวกับ String ดังนั้น คุนจึงสามารถทำงานกับ Substring ได้ในลักษณะเดียวกับ String &#x20;
 
 ```swift
 let greeting = "Hello, world!"
@@ -249,7 +249,7 @@ let beginning: String.SubSequence = greeting[..<index]
 let newString = String(beginning)
 ```
 
-![String &#xE41;&#xE25;&#xE30; Substring](.gitbook/assets/screen-shot-2020-02-09-at-01.11.11.png)
+![String และ Substring](<.gitbook/assets/Screen Shot 2020-02-09 at 01.11.11.png>)
 
 ในตัวอย่างข้างต้น `greeting` เป็น String ซึ่งหมายความว่า มันมีพื้นที่หน่วยความจำที่เก็บอักขระที่ประกอบขึ้นเป็นข้อความ เนื่องจาก `beginning` เป็น Substring ของ  `greeting` ดังนั้นจะเกิดความผิดพลาดขึ้นหากเขียนคำสั่ง
 
@@ -259,7 +259,7 @@ let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
 let beginning: String = greeting[..<index]  //error
 ```
 
-การใช้ Substring นั้น เหมาะสมกับการดำเนินการในช่วงสั้นๆ เท่านั้น  เนื่องจากมันมีการใช้หน่วยความจำในการจัดเก็บข้อมูลจาก String ต้นฉบับ จึงทำให้ระบบจำเป็นต้อง retain หน่วยความจำของต้นฉบับเอาไว้ตราบเท่าที่ Substring นั้นยังทำงานอยู่ ส่งผลให้เกิดความสิ้นเปลืองหน่วยความจำของระบบ ดังนั้น เมื่อต้องการจัดเก็บหรือนำข้อมูลไปใช้งานในระยะยาวจึงควรทำการแปลงชนิดให้เป็น String เสียก่อน 
+การใช้ Substring นั้น เหมาะสมกับการดำเนินการในช่วงสั้นๆ เท่านั้น  เนื่องจากมันมีการใช้หน่วยความจำในการจัดเก็บข้อมูลจาก String ต้นฉบับ จึงทำให้ระบบจำเป็นต้อง retain หน่วยความจำของต้นฉบับเอาไว้ตราบเท่าที่ Substring นั้นยังทำงานอยู่ ส่งผลให้เกิดความสิ้นเปลืองหน่วยความจำของระบบ ดังนั้น เมื่อต้องการจัดเก็บหรือนำข้อมูลไปใช้งานในระยะยาวจึงควรทำการแปลงชนิดให้เป็น String เสียก่อน&#x20;
 
 ```swift
 // Convert the result to a String for long-term storage.
@@ -268,16 +268,15 @@ let newString = String(beginning)
 
 ## แหล่งข้อมูลอ้างอิง
 
-* [The Swift Programming Language \(Swift 5.2 beta\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-2-beta/id1002622538), Apple Inc., 2020
+* [The Swift Programming Language (Swift 5.2 beta)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-2-beta/id1002622538), Apple Inc., 2020
 * [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017. Available on: Apple Book Store.
 
 {% hint style="info" %}
-**รายละเอียดเพื่อการอ้างอิง  
-ผู้เขียน** ธิติ ธีระเธียร    
-**วันที่เผยแพร่**  วันที่ 16 มิถุนายน 2562.  
-**วันที่ปรุงปรุงล่าสุด** วันที่ 1 กุมภาพันธ์ 2563  
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/string](https://ajthiti.gitbook.io/swift/string)  
-**เงื่อนใขในการใช้งาน**  
-This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+**รายละเอียดเพื่อการอ้างอิง**\
+**ผู้เขียน** ธิติ ธีระเธียร  \
+**วันที่เผยแพร่**  วันที่ 16 มิถุนายน 2562.\
+**วันที่ปรุงปรุงล่าสุด** วันที่ 1 กุมภาพันธ์ 2563\
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/string](https://ajthiti.gitbook.io/swift/string)\
+**เงื่อนใขในการใช้งาน**\
+****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
-

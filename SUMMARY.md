@@ -4,9 +4,11 @@
 * [Constants, Variables and Types](constants-variables-and-types.md)
 * [Optionals](optionals.md)
 * [Operators](operators.md)
+* [Conditional Statement](conditional-statement.md)
+* [Guard-else](guard-else.md)
 * [Number](number.md)
 * [String](string.md)
-* [Conditional Statement](conditional-statement.md)
+* [Array](array.md)
 * [Loops](loops.md)
 * [Functions](functions.md)
-
+* [Closure](closure.md)

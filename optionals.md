@@ -6,19 +6,19 @@ description: >-
 
 # Optionals
 
-ตัวแปรที่มี **ค่าว่าง \(nil\)** หรือ ตัวแปรที่ยังไม่ถูกกำหนดค่า \(Not set\) เมื่อถูกเรียกใช้งานอาจส่งผลให้เกิดความผิดพลาดในการทำงานของโปรแกรมและสร้างประสบการณ์การใช้งานที่ไม่ดีกับผู้ใช้ ซึ่งภาษา Swift นั้น จะไม่อนุญาตให้มีการกำหนดค่า nil ให้กับตัวแปรที่ถูกสร้างขึ้นตามปกติทั่วไป
+ตัวแปรที่มี **ค่าว่าง (nil)** หรือ ตัวแปรที่ยังไม่ถูกกำหนดค่า (Not set) เมื่อถูกเรียกใช้งานอาจส่งผลให้เกิดความผิดพลาดในการทำงานของโปรแกรมและสร้างประสบการณ์การใช้งานที่ไม่ดีกับผู้ใช้ ซึ่งภาษา Swift นั้น จะไม่อนุญาตให้มีการกำหนดค่า nil ให้กับตัวแปรที่ถูกสร้างขึ้นตามปกติทั่วไป
 
 ```swift
 var userInput: String = nil   //'nil' cannot initialize specified type 'String'
 ```
 
-**Optional** คือ การกำหนดให้ทราบว่าตัวแปรอาจมีสถานะที่ไม่มีค่า \(Not set\) หรือมีโอกาสเป็นค่าว่าง \(nil\) ได้ โดยปกติแล้ว Optional จะถูกใช้งานกับตัวแปรเท่านั้น เนื่องจากหากนำมาใช้กับค่าคงที่แล้ว เมื่อมีการกำหนดให้ค่าคงที่ดังกล่าวเป็น nil ก็จะไม่สามารถเปลี่ยนแปลงค่าได้อีก การกำหนดให้ตัวแปรเป็น Optional ทำได้โดยใส่เครื่องหมาย ? กำกับลงไปดังนี้
+**Optional** คือ การกำหนดให้ทราบว่าตัวแปรอาจมีสถานะที่ไม่มีค่า (Not set) หรือมีโอกาสเป็นค่าว่าง (nil) ได้ โดยปกติแล้ว Optional จะถูกใช้งานกับตัวแปรเท่านั้น เนื่องจากหากนำมาใช้กับค่าคงที่แล้ว เมื่อมีการกำหนดให้ค่าคงที่ดังกล่าวเป็น nil ก็จะไม่สามารถเปลี่ยนแปลงค่าได้อีก การกำหนดให้ตัวแปรเป็น Optional ทำได้โดยใส่เครื่องหมาย ? กำกับลงไปดังนี้
 
 ```swift
 var userInput: String? = nil
 ```
 
-เมื่อมีการกำหนดค่าให้กับตัวแปรแบบ Optional แล้ว การจะนำค่าดังกล่าวมาใช้งานนั้นจำเป็นจะต้อง Unwrap ค่าที่ถูกเก็บไว้ออกมาเสียก่อน โดยการใส่เครื่องหมาย ! กำกับในส่วนท้ายชื่อของตัวแปร เรียกวิธีการนี้ว่า **Force unwarpping**  
+เมื่อมีการกำหนดค่าให้กับตัวแปรแบบ Optional แล้ว การจะนำค่าดังกล่าวมาใช้งานนั้นจำเป็นจะต้อง Unwrap ค่าที่ถูกเก็บไว้ออกมาเสียก่อน โดยการใส่เครื่องหมาย ! กำกับในส่วนท้ายชื่อของตัวแปร เรียกวิธีการนี้ว่า **Force unwarpping**&#x20;
 
 ```swift
 var userInput: String?
@@ -62,7 +62,7 @@ if let inputData: String = userInput {
 }
 ```
 
-นอกจากนี้ ยังสามารถใช้เครื่องหมาย ?? ซึ่งเรียกว่า **Nil Coalescing Operator** ในการกำหนดค่าโดยปริยาย \(default\) ให้กับข้อมูลได้ดังนี้
+นอกจากนี้ ยังสามารถใช้เครื่องหมาย ?? ซึ่งเรียกว่า **Nil Coalescing Operator** ในการกำหนดค่าโดยปริยาย (default) ให้กับข้อมูลได้ดังนี้
 
 ```swift
 var inputAge: Int!
@@ -70,7 +70,7 @@ var myAge: Int = inputAge ?? 0    //if inputAge = nil then assign 0 to myAge
 print(myAge)
 ```
 
-หรือการใช้ ? และ ! ร่วมกับ as ในการแปลงชนิดของข้อมูล \(Type casting\) 
+หรือการใช้ ? และ ! ร่วมกับ as ในการแปลงชนิดของข้อมูล (Type casting)&#x20;
 
 ```swift
 var temp: Any = "12"
@@ -84,17 +84,16 @@ if let myNumber = temp as? Int {
 
 ## แหล่งข้อมูลอ้างอิง
 
-* [The Swift Programming Language \(Swift 5.0\)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
+* [The Swift Programming Language (Swift 5.0)](https://books.apple.com/th/book/the-swift-programming-language-swift-5-0/id881256329), Apple Inc., 2018. Available on: Apple Book Store.
 * [App Development with Swift](https://books.apple.com/th/book/app-development-with-swift/id1465002990), Apple Inc., 2017. Available on: Apple Book Store.
 
 
 
 {% hint style="info" %}
-**รายละเอียดเพื่อการอ้างอิง  
-ผู้เขียน** ธิติ ธีระเธียร    
-**วันที่เผยแพร่**  วันที่ 26 เมษายน 2562.  
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/optionals](https://ajthiti.gitbook.io/swift/optionals)  
-**เงื่อนใขในการใช้งาน**  
-This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+**รายละเอียดเพื่อการอ้างอิง**\
+**ผู้เขียน** ธิติ ธีระเธียร  \
+**วันที่เผยแพร่**  วันที่ 26 เมษายน 2562.\
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/optionals](https://ajthiti.gitbook.io/swift/optionals)\
+**เงื่อนใขในการใช้งาน**\
+****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
-
