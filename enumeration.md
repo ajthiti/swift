@@ -43,8 +43,8 @@ switch compassHeading {
 {% hint style="info" %}
 **รายละเอียดเพื่อการอ้างอิง**\
 **ผู้เขียน** ธิติ ธีระเธียร  \
-**วันที่เผยแพร่**  วันที่ 27 มิถุนายน 2565.\
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/closure](https://ajthiti.gitbook.io/swift/closure)\
+**วันที่เผยแพร่**  วันที่ 10 กรกฏาคม 2565.\
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/enumeration](https://ajthiti.gitbook.io/swift/enumeration)\
 **เงื่อนใขในการใช้งาน**\
 ****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
