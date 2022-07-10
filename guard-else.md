@@ -64,7 +64,7 @@ func atmwithdrawMoneyl (amount: Int) {
 **รายละเอียดเพื่อการอ้างอิง**\
 **ผู้เขียน** ธิติ ธีระเธียร  \
 **วันที่เผยแพร่**  วันที่ 10 กรกฏาคม 2565\
-**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/guard-else](https://ajthiti.gitbook.io/swift/guard-else)\
+**เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/number](https://ajthiti.gitbook.io/swift/number)\
 **เงื่อนใขในการใช้งาน**\
 ****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
