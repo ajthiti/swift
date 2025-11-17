@@ -95,5 +95,5 @@ if let myNumber = temp as? Int {
 **วันที่เผยแพร่**  วันที่ 26 เมษายน 2562.\
 **เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/optionals](https://ajthiti.gitbook.io/swift/optionals)\
 **เงื่อนใขในการใช้งาน**\
-****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
