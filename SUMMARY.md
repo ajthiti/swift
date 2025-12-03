@@ -13,4 +13,4 @@
 * [Functions](functions.md)
 * [Closure](closure.md)
 * [Enumeration](enumeration.md)
-* [SwiftUI](https://ajthiti.gitbook.io/develop-in-swift)
+* [Creating Apps with SwiftUI](https://ajthiti.gitbook.io/develop-in-swift)

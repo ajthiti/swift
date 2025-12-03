@@ -75,5 +75,5 @@ let max = mathOperate(firstNumer: 10.0, secondNumer: 5.0, with: {
 **วันที่เผยแพร่**  วันที่ 27 มิถุนายน 2564.\
 **เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/closure](https://ajthiti.gitbook.io/swift/closure)\
 **เงื่อนใขในการใช้งาน**\
-****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
