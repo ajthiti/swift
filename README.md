@@ -47,6 +47,6 @@ Swift 5.3 ยังรองรับการพัฒนาโปรแกร�
 **วันที่ปรุงปรุงล่าสุด** วันที่ 1 กุมภาพันธ์ 2563\
 **เข้าถึงได้จาก** [https://ajthiti.gitbook.io/swift/](https://ajthiti.gitbook.io/swift/)\
 **เงื่อนใขในการใช้งาน**\
-****This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 {% endhint %}
 
